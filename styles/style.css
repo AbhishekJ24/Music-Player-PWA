@@ -5,7 +5,10 @@
     box-sizing: border-box;
     color: white;
 }
-
+body
+{
+    background-color: black;
+}
 .cont {
     padding: 3px;
 }

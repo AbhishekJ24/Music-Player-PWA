@@ -1,0 +1,57 @@
+.flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.sections-body {
+    background-color: #121212;
+}
+
+.no-underline-links {
+    text-decoration: none;
+}
+
+.invert-svg {
+    filter: invert(1);
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.greyish-white-no-hover {
+    color: rgb(217, 217, 217);
+}
+
+.white-on-hover:hover {
+    color: rgb(255, 255, 255);
+}
+
+.border-radius-10 {
+    border-radius: 10px;
+}
+
+.m5 {
+    margin: 5px;
+}
+
+.right-aligner {
+    display: flex;
+    justify-items: right;
+}
+
+.no-border-btn{
+    border: none;
+}
+
+.test-div{
+    height: 400px;
+    background-color: rgb(34, 33, 33);
+}

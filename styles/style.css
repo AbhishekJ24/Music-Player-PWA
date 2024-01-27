@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato';
+    box-sizing: border-box;
+    color: white;
+}
+
+.cont {
+    padding: 3px;
+}
+
+.left {
+    width: 20vw;
+    height: 100vh;
+    padding: 2px;
+}
+
+.right {
+    width: 80vw;
+    height: 100vh;
+    margin: 4px;
+}
+
+.left-top {
+    height: 18vh;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.left-bottom {
+    height: 82vh;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+.logo,
+.home,
+.search,
+.library {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.library {
+    position: absolute;
+
+}
+
+.search li a {
+    color: rgb(167, 167, 167);
+}
+
+.search li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.library li a {
+    color: rgb(167, 167, 167);
+}
+
+.library {
+    position: relative;
+}
+
+.library li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.left-top ul {
+    padding: 4px;
+}
+
+#add {
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(167, 167, 167);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#add:hover {
+    color: rgb(255, 255, 255);
+    background-color: #2a2a2abb;
+
+}
+
+.left-bottom-footer a {
+    color: rgb(167, 167, 167);
+    text-decoration: none;
+}
+
+.left-bottom-footer {
+    display: flex;
+    gap: 12px;
+    font-size: 11px;
+    flex-wrap: wrap;
+
+}
+
+.left-bottom-sub{
+    height: 40vh;
+    overflow: scroll;
+}
+.left-bottom-sub-1,
+.left-bottom-sub-2 {
+    height: 16vh;
+    background-color: #242424;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.left-bottom-sub-1 .h1, .left-bottom-sub-2 .h1 {
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    padding: 8px;
+}
+
+.left-bottom-sub-1 .h2, .left-bottom-sub-2 .h2 {
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    padding: 8px;
+}
+
+.left-bottom-sub-1 button, .left-bottom-sub-2 button{
+    width: 150px;
+    margin: 8px;
+    padding: 8px;
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #242424;
+    font-weight: 700;
+}
+.left-bottom-sub-1 button{
+    width: 130px;
+}
+
+.left-bottom-sub-1 button:hover, .left-bottom-sub-2 button:hover{
+    transform: scale(1.05);
+}
+
+.right .header .nav-btn button{
+    background-color: transparent;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.379);
+    cursor: pointer;
+    padding: 8px;
+
+}
+
+.header{
+    width: 80vw;
+    height: 60px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.373);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right .header .sign-btn button{
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 8px 32px;
+    height: 48px;
+    width: 130px;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(167, 167, 167);
+    margin-right: 10px;
+}
+.right .header .sign-btn button:last-child{
+    background-color: transparent;
+    border-radius: 50px;
+    background-color: white;
+    padding: 8px;
+    color:#242424;
+    padding: 10px;
+    width: 109.37px;
+}
+
+.right .header .sign-btn button:hover{
+    transform: scale(1.075);
+}

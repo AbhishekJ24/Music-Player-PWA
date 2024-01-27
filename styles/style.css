@@ -5,10 +5,11 @@
     box-sizing: border-box;
     color: white;
 }
-body
-{
+
+body {
     background-color: black;
 }
+
 .cont {
     padding: 3px;
 }
@@ -114,10 +115,11 @@ body
 
 }
 
-.left-bottom-sub{
+.left-bottom-sub {
     height: 40vh;
     overflow: scroll;
 }
+
 .left-bottom-sub-1,
 .left-bottom-sub-2 {
     height: 16vh;
@@ -127,21 +129,24 @@ body
     padding: 8px;
 }
 
-.left-bottom-sub-1 .h1, .left-bottom-sub-2 .h1 {
+.left-bottom-sub-1 .h1,
+.left-bottom-sub-2 .h1 {
     font-size: 16px;
     font-weight: 700;
     display: block;
     padding: 8px;
 }
 
-.left-bottom-sub-1 .h2, .left-bottom-sub-2 .h2 {
+.left-bottom-sub-1 .h2,
+.left-bottom-sub-2 .h2 {
     font-size: 14px;
     font-weight: 400;
     display: block;
     padding: 8px;
 }
 
-.left-bottom-sub-1 button, .left-bottom-sub-2 button{
+.left-bottom-sub-1 button,
+.left-bottom-sub-2 button {
     width: 150px;
     margin: 8px;
     padding: 8px;
@@ -151,15 +156,17 @@ body
     color: #242424;
     font-weight: 700;
 }
-.left-bottom-sub-1 button{
+
+.left-bottom-sub-1 button {
     width: 130px;
 }
 
-.left-bottom-sub-1 button:hover, .left-bottom-sub-2 button:hover{
+.left-bottom-sub-1 button:hover,
+.left-bottom-sub-2 button:hover {
     transform: scale(1.05);
 }
 
-.right .header .nav-btn button{
+.right .header .nav-btn button {
     background-color: transparent;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.379);
@@ -168,7 +175,7 @@ body
 
 }
 
-.header{
+.header {
     width: 80vw;
     height: 60px;
     padding: 15px;
@@ -179,7 +186,7 @@ body
     justify-content: space-between;
 }
 
-.right .header .sign-btn button{
+.right .header .sign-btn button {
     background-color: transparent;
     border-radius: 50px;
     font-size: 16px;
@@ -191,16 +198,17 @@ body
     color: rgb(167, 167, 167);
     margin-right: 10px;
 }
-.right .header .sign-btn button:last-child{
+
+.right .header .sign-btn button:last-child {
     background-color: transparent;
     border-radius: 50px;
     background-color: white;
     padding: 8px;
-    color:#242424;
+    color: #242424;
     padding: 10px;
     width: 109.37px;
 }
 
-.right .header .sign-btn button:hover{
+.right .header .sign-btn button:hover {
     transform: scale(1.075);
 }

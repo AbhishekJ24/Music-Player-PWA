@@ -47,11 +47,11 @@
     justify-items: right;
 }
 
-.no-border-btn{
+.no-border-btn {
     border: none;
 }
 
-.test-div{
+.test-div {
     height: 400px;
     background-color: rgb(34, 33, 33);
 }

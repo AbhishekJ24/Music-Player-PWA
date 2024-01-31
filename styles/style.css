@@ -22,8 +22,8 @@ body {
 
 .right {
     width: 80vw;
-    height: 100vh;
-    margin: 4px;
+    height: 80vh;
+    overflow-y: scroll;
 }
 
 .left-top {
@@ -39,6 +39,7 @@ body {
     padding-left: 20px;
     padding-top: 5px;
     padding-right: 20px;
+    position: relative;
 }
 
 .logo,
@@ -112,58 +113,8 @@ body {
     gap: 12px;
     font-size: 11px;
     flex-wrap: wrap;
-
-}
-
-.left-bottom-sub {
-    height: 40vh;
-    overflow: scroll;
-}
-
-.left-bottom-sub-1,
-.left-bottom-sub-2 {
-    height: 15vh;
-    background-color: #242424;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 8px;
-}
-
-.left-bottom-sub-1 .h1,
-.left-bottom-sub-2 .h1 {
-    font-size: 16px;
-    font-weight: 700;
-    display: block;
-    padding: 8px;
-}
-
-.left-bottom-sub-1 .h2,
-.left-bottom-sub-2 .h2 {
-    font-size: 14px;
-    font-weight: 400;
-    display: block;
-    padding: 8px;
-}
-
-.left-bottom-sub-1 button,
-.left-bottom-sub-2 button {
-    width: 150px;
-    margin: 8px;
-    padding: 8px;
-    background-color: white;
-    margin-top: 15px;
-    border-radius: 20px;
-    color: #242424;
-    font-weight: 700;
-}
-
-.left-bottom-sub-1 button {
-    width: 130px;
-}
-
-.left-bottom-sub-1 button:hover,
-.left-bottom-sub-2 button:hover {
-    transform: scale(1.05);
+    position: absolute;
+    bottom: 40px;
 }
 
 .right .header .nav-btn button {
@@ -230,12 +181,12 @@ body {
 .song-card {
     width: 245px;
     overflow: hidden;
-    background-color: rgb(23,23,23);
+    background-color: rgb(23, 23, 23);
     padding: 25px 20px;
     position: relative;
 }
 
-.song-card>*{
+.song-card>* {
     margin-top: 10px;
 }
 
@@ -249,13 +200,27 @@ body {
 }
 
 .song-card>button {
+    opacity: 0;
     background-color: transparent;
     border: none;
+    position: absolute;
 }
-.song-card>button {
-    position:absolute;
-    right: 14px;
-    top: 160px;
+
+.song-card:hover>button {
+    animation: playbtn-animation 400ms linear 100ms infinite;
+    opacity: 1;
+}
+
+@keyframes playbtn-animation {
+    0% {
+        top: 190px;
+        right: 14px;
+    }
+
+    100% {
+        top: 160px;
+        right: 14px;
+    }
 }
 
 .song-card .song-card-h1 {
@@ -264,4 +229,23 @@ body {
 
 .song-card .song-card-h2 {
     color: rgb(167, 167, 167);
+}
+
+.play-bar{
+    height: 20vh;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    width: 80vw;
+border-radius: 20px;
+}
+
+.play-bar-cont>button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.play-bar-cont img{
+    height: 60px;
 }

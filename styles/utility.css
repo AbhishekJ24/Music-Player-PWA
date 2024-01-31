@@ -51,7 +51,7 @@
     border: none;
 }
 
-.test-div {
-    height: 400px;
-    background-color: rgb(34, 33, 33);
+.testdiv {
+    background-color: white;
+    border: 2px solid red;
 }

@@ -213,41 +213,54 @@ body {
     transform: scale(1.075);
 }
 
-.song-card-h1{
-    font-weight: 700;
-    font-size: 16px;
+.cards-cont {
+    margin: 80px 30px;
 }
 
-.song-card-h2{
-    font-weight: 400;
-    font-size: 14px;
+.cards-cont h2 {
+    font-size: 28px;
+    margin: 22px 2px;
 }
 
-.song-card{
-    height: 350px;
-    width: 250px;
-    background-color: #242424ce;
-}
-
-.song-card-cont{
-    margin-left: 30px;
-    margin-right: 30px;
-    gap: 40px;
+.cards-cont .cards-encloser {
+    gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
-.cards-cont h2{
-    margin: 15px 5px;
+.song-card {
+    width: min-content;
+    height: 325px;
+    overflow: hidden;
+    background-color: rgb(27, 27, 27);
+    padding: 25px 20px;
 }
 
-.cards-cont{
-    margin-top: 150px;
+.song-card:hover {
+    background-color: #242424;
 }
 
-.song-card img{
-    width: 225px;
-    height: 400px;
-    margin: 12px;
-    object-fit: contain;
+.song-card>img {
+    width: 200px;
+}
+
+.song-card>button {
+    background-color: transparent;
+    border: none;
+}
+.song-card>button {
+    position:relative;
+    left: 130px;
+    bottom:75px;
+}
+.song-card>button>img:hover {
+    transform: scale(1.075);
+}
+
+.song-card .song-card-h1 {
+    font-size: 19px;
+    margin: -65px auto 8px auto;
+}
+
+.song-card .song-card-h2 {
+    color: rgb(167, 167, 167);
 }

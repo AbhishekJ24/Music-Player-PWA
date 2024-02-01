@@ -10,19 +10,14 @@ body {
     background-color: black;
 }
 
-.cont {
-    padding: 3px;
-}
-
 .left {
     width: 20vw;
     height: 100vh;
-    padding: 2px;
 }
 
 .right {
     width: 80vw;
-    height: 80vh;
+    height: 90vh;
     overflow-y: scroll;
 }
 
@@ -54,11 +49,6 @@ body {
     align-items: center;
 }
 
-.library {
-    position: absolute;
-
-}
-
 .search li a {
     color: rgb(167, 167, 167);
 }
@@ -67,40 +57,45 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.library li a {
-    color: rgb(167, 167, 167);
-}
-
 .library {
     position: relative;
-}
-
-.library li a:hover {
-    color: rgb(255, 255, 255);
 }
 
 .left-top ul {
     padding: 4px;
 }
 
-#add {
-    border-radius: 100px;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color: rgb(167, 167, 167);
+.songs-library-list {
+    height: 60vh;
+    overflow: scroll;
+}
+
+.songs-library-list li {
+    justify-content: space-between;
+    border: 2px solid #242424;
+    padding: 15px;
+}
+
+.songs-library-list li .song-info {
+    overflow-x: hidden;
+}
+
+.songs-library-list li>img {
+    height: 70px;
+}
+
+.songs-library-list li button {
     background-color: transparent;
     border: none;
+}
+
+.songs-library-list li button:hover {
+    transform: scale(1.05);
     cursor: pointer;
 }
 
-#add:hover {
-    color: rgb(255, 255, 255);
-    background-color: #2a2a2abb;
-
+.songs-library-list li button>img {
+    height: 30px;
 }
 
 .left-bottom-footer a {
@@ -179,10 +174,10 @@ body {
 }
 
 .song-card {
-    width: 245px;
+    width: 200px;
     overflow: hidden;
     background-color: rgb(23, 23, 23);
-    padding: 25px 20px;
+    padding: 20px 15px;
     position: relative;
 }
 
@@ -231,21 +226,27 @@ body {
     color: rgb(167, 167, 167);
 }
 
-.play-bar{
-    height: 20vh;
+.play-bar {
+    height: 10vh;
     position: absolute;
     bottom: -15px;
     right: 0;
     width: 80vw;
-border-radius: 20px;
+    border-radius: 20px;
 }
 
-.play-bar-cont>button{
+.play-bar-cont {
+    gap: 35px;
+    position: relative;
+    top: 20px;
+}
+
+.play-bar-cont>button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.play-bar-cont img{
+.play-bar-cont img {
     height: 60px;
 }

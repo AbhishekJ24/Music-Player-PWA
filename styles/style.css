@@ -65,37 +65,50 @@ body {
     padding: 4px;
 }
 
-.songs-library-list {
+.songs-library-list>ul{
     height: 60vh;
     overflow: scroll;
 }
 
-.songs-library-list li {
+.songs-library-list>ul>li:hover{
+    background-color: rgb(27, 27, 27);
+}
+
+.songs-library-list>ul li {
     justify-content: space-between;
     border: 2px solid #242424;
     padding: 15px;
 }
 
-.songs-library-list li .song-info {
+.songs-library-list>ul li .song-info {
     overflow-x: hidden;
 }
 
-.songs-library-list li>img {
-    height: 70px;
+.songs-library-list>ul li>img {
+    height: 65px;
 }
 
-.songs-library-list li button {
+.songs-library-list>ul li button {
     background-color: transparent;
     border: none;
 }
 
-.songs-library-list li button:hover {
+.songs-library-list>ul li button:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
 
-.songs-library-list li button>img {
+.songs-library-list>ul li button>img {
     height: 30px;
+}
+
+.song-info p{
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.song-info p:last-child{
+    font-weight: 400;
 }
 
 .left-bottom-footer a {

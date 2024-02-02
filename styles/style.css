@@ -109,7 +109,8 @@ body {
     font-size: 11px;
     flex-wrap: wrap;
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
+    left: 15px;
 }
 
 .right .header .nav-btn button {
@@ -238,7 +239,7 @@ body {
 .play-bar-cont {
     gap: 35px;
     position: relative;
-    top: 20px;
+    top: 10px;
 }
 
 .play-bar-cont>button {
@@ -248,5 +249,5 @@ body {
 }
 
 .play-bar-cont img {
-    height: 60px;
+    height: 40px;
 }
